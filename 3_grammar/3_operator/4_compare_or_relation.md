@@ -1,0 +1,14 @@
+## 2 compare or relation
+`data type` of result is `bool` 
+
+* `==` 
+
+* `!=` 
+
+* `<` 
+
+* `>` 
+
+* `<=` 
+
+* `>=` 
