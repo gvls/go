@@ -9,9 +9,11 @@ Can't have `相同的函数名` or `全局变量` in `同一个package`
 * `directory` 
 `package name` of current `directory`   ==   name of current `directory` 
 They generally use lower case
+they use `驼峰式` 
 
 * file name
 ~~ `file name` of current file **generally** is same as `package name` ~~
+use `_` replace `驼峰式` 
 
 
 ### 3  function of `package` 
