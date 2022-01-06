@@ -9,6 +9,7 @@ Can include more than one statement and segmentation by `;`
 Can define variate in it
 
 * `单分支` 
+~~best use this. Best use it in error~~ 
 ```go
 if <condition> {
 	...
