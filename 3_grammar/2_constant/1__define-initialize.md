@@ -11,6 +11,9 @@ const <name> [dataType] = <value>
 const <name>, <name>, <name> = <value>, <value>, <value>
 ```
 
+* `name` 
+all big case and connected by `_` 
+
 
 ### 3  define more 
 ```go

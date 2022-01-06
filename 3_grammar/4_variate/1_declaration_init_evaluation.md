@@ -3,6 +3,9 @@ value can is `function`
 
 ### 3  declaration
 If declaration **part** `variate`(`struct variate` `除外`), we must use it   otherwise `build` will error
+* `name` 
+if `type` is `interface` : `*er` 
+if have special word : such as : `APIClient` , `apiClient` , `userID` 
 
 ```go
 var <name> <type>
