@@ -6,16 +6,15 @@ Try to use short, clear, meaningful name
 Don't name same as `standard library`
 
 ### 3  `variate`, `function`, `constant` name
-Except first word, every word initial capital (`小驼峰式`)
+use `小驼峰式`
 
 ### 3  rule
 Case sensitive
-Only consist of `a~z`, `A~Z`, `0~9` and `_` 
+**Only** consist of `a~z`, `A~Z`, `0~9` and `_` (not include ` ` )
+Can't **only** use `_` 
 Head can't is `0~9` 
 Can't use `retain key`(`break` ...) as identifier
 Such as :`int` , `float32` ... , can use as identifier but not recommend
-Can't include ` ` 
-Can't use `_` 
 
 ### 3  visit ability
 If `variate`, `function`, `constant` not first word initial capital, it only can be visit by own `package`

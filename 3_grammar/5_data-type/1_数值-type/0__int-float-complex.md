@@ -1,6 +1,14 @@
 ## 2 number
+```shell
+6
+_____
+|   |
+| 6 |
+|   |
+-----
+```
 number in the end of `data type` is bit
-1 byte == 8 bit
+1 byte == 8 bit == `____ ____`
 
 ### 3  int
 #### 4   have symbol
@@ -13,10 +21,10 @@ If 32 bit system: four byte
 If 64 bit system: eight byte
 -2^63 ~ -2^63-1
 
-* `int8` one byte
+* `int8`
 -128 ~ 127(2^7 -1)
 
-* `int16` two byte
+* `int16`
 -2^15 ~ 2^15-1
 
 * `int32 , rune` four byte
@@ -24,7 +32,7 @@ visit element by byte (can't visit china character)
 -2^31 ~ 2^31-1
 `rune` is use in Unicode
 
-* `int64` eight byte
+* `int64`
 -2^63 ~ 2^63-1
 
 
@@ -39,13 +47,13 @@ If 64 bit system: eight byte
 * `uint8 , byte` one byte
 0 ~ 255 (2^8 -1)
 
-* `uint16` two byte
+* `uint16`
 0 ~ 2^16-1
 
-* `uint32` four byte
+* `uint32`
 0 ~ 2^32-1
 
-* `uint64` eight byte
+* `uint64`
 0 ~ 2^64-1
 
 * `uintptr` 

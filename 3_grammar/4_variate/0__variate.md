@@ -1,6 +1,5 @@
 ## 2 `variate`
-If `variate` not use, `build` will error
-Variate = name + value + type
+`variate` = name + value + type
 Value of `variate` can change in scope with `data type` 
 
 ### 3  use

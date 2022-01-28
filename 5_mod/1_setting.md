@@ -3,8 +3,6 @@
 go env -w ...
 ```
 
-
-
 ### 3  `GO111MODULE` 
 After `go` version 1.11, `GO111MODULE=auto` 
 * `on` 

@@ -1,4 +1,11 @@
 ## 2 `bool`
+```shell
+______
+|    |
+|true|
+|    |
+------
+```
 use one byte
 
 ## 2 Value

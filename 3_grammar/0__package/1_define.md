@@ -1,6 +1,5 @@
 ## 2 define `package  `
-write it in first line
 ```go
-package <name>
+package <name> 	// write in first line
 ```
 

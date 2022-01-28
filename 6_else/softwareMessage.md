@@ -7,7 +7,6 @@
 		warehouse
 
 
-
 2 configuration
 	2.1 default
 		in software home
@@ -28,5 +27,3 @@
 6 IDE
 	integrated development environment
 
-7 jdbc
-	java database connectively

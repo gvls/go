@@ -1,12 +1,11 @@
 ## 2 `action-scope` 
-### 3  `action scope` of `variate` 
 Out of the `action scope` of `variate` , `variate` can't be use
 In **same one** `action scope`, name of `variate` can't same
 
 #### 4   `globe variate`
 position : define `variate` out of all `function`
 `action scope` : can be use in same `package` (`小写首字母`)
-`action scope` : can be use in total procedure (`大写首字母`)
+`action scope` : can be use in total project (`大写首字母`)
 
 
 #### 4   `part variate`

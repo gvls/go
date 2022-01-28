@@ -1,8 +1,8 @@
-## 2 `网络编程` 
-
 ### 3  `TCP socket` 
 `TCP socket` basic on `TCP/IP` 
 Need `import "net"` 
+
+
 
 #### 4   `server` 
 1. monitor `port` 
@@ -49,8 +49,6 @@ func main() {
 
 
 
-
-
 #### 4   `client` 
 1. send connection to `server` 
 2. send `data` to `server` and receive `data` from `server` 
@@ -72,9 +70,3 @@ bufio.NewReader(os.Stdin) Reader
 <Conn>.Write([]byte) (int, error)	// int : number of byte
 ```
 
-
-
-
-
-### 3  `B/S http` 
-`http` basic on `TCP socket` 

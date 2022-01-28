@@ -1,4 +1,12 @@
 ## 2 `array`
+```shell
+1  9  3 
+_____________________________
+|   |   |   |   |   |   |   |
+| 1 | 9 | 3 | 0 | 0 | 0 | 0 |
+|   |   |   |   |   |   |   |
+-----------------------------
+```
 It can save many value which is same `data type` 
 When define, Length of it is fixation
 `address` of `array` is `address` of first element of `array` 
@@ -7,8 +15,8 @@ When define, Length of it is fixation
 ### 3  `data type` format
 `dataType` can is any `data type` 
 Because of `dataType` is different, go have many `array data type` 
-`length of array` is from 0 ~ length-1
-`不同长度的数据类型是 不同的数据类型` 
+`不同长度的数据类型也是 不同的数据类型` 
+`index of array` is from 0 ~ length-1
 ```go
 [length of arrary]dataType
 ```
@@ -21,7 +29,7 @@ var arrayName [length of array]dataType
 
 
 ### 3  evaluation
-`length of array` must same as length of `arrayName`
+`length of array` must same as length of `array variate`
 `array` is `数值类型` , so `array` is use like `int` ...
 
 * not write `data type` of `variate` 
@@ -56,10 +64,10 @@ arrayNmae = new([length of arry]dataType)
 ### 3  use
 
 * visit all element
-If `arrayName` is `pointer` , follow output : `&all element` 
 ```go
 arrayName
 ```
+If `arrayName` is `pointer` , follow output : `&all element` 
 
 * visit or evaluation for element
 ```go

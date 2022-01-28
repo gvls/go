@@ -1,13 +1,13 @@
 ## 2 transform
-When operate on different `data type`, we must do transform
+When operate on different `data type`, we **must** do transform
 `Go` can't transform data type **automatic**
 Transform must `显式转换`
 Object of transform is **value** of `variate` (`data type` of `variate` isn't changed)
 ```go
-<data type>(<value>)
+res := <type>(<value>)
 ```
 
-* `不用类型转换` 
+* `不用类型转换 的情况` 
 `数字不管没有小数点 或者是'字符' 它可以是 int... 或者float...中的任何一个` 
 
 
@@ -21,7 +21,7 @@ By current `statement`, can know value is bigger than value scope of `data type`
 
 #### 4   Build not out put error
 By current `statement`, can't know value is bigger than value scope of `data type` of `variate`
-May have precision lost and value is value of overflow
+May have **precision lost** and value is value of overflow
 Such as: 
 ```go
 var v1 int64 = 130
@@ -40,6 +40,7 @@ boo, _ = strconv.ParseBool("true")
 int64v, _ = strconv.ParseInt("111", 10, 64)
 float64v, _ = strconv.ParseFloat(123.45, 64)
 ```
+### 3  `strconv.Atoi()` 
 
 
 
@@ -69,7 +70,7 @@ str = Itoa(111)
 
 ## 2 `类型断言` 
 ```go
-<variate>.(<type>)
+res, ok := <interface>.(<type>)
 ```
 
 

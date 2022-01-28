@@ -1,16 +1,5 @@
-## 2 declaration initialize evaluation
+# 2 declaration initialize evaluation
 value can is `function`
-
-### 3  declaration
-If declaration **part** `variate`(`struct variate` `除外`), we must use it   otherwise `build` will error
-* `name` 
-if `type` is `interface` : `*er` 
-if have special word : such as : `APIClient` , `apiClient` , `userID` 
-
-```go
-var <name> <type>
-var <name 1>, <name 2>, <name 3> <type>
-```
 
 * default initialize
 If not evaluation `variate`, go will initialize it by default value
@@ -25,6 +14,16 @@ All `variate` will be initialize , include : `array` , `struct` ...
 `error` nil
 
 
+### 3  declaration
+If declaration **part** `variate`(`struct variate` `除外`), we must use it
+* `name` 
+if `type` is `interface` : `*er` 
+if have special word : such as : `APIClient` , `apiClient` , `userID` 
+```go
+var <name> <type>
+var <name 1>, <name 2>, <name 3> <type>
+```
+
 
 ### 3  evaluation
 ```go
@@ -36,13 +35,12 @@ All `variate` will be initialize , include : `array` , `struct` ...
 ### 3  declaration + `初始化` 
 can do `初始化` in `globe variate` 
 
-#### 4   var + type
+* have `type` 
 ```go
 var <name> <type> = <value>
 ```
 
-
-#### 4   var
+* not have `type` 
 If not write `data type`, go will automatic conclude `data type` by value
 It often be use in `globle` 
 ```go
@@ -59,10 +57,8 @@ var (
 
 
 ### 3  do declaration and do evaluation
-
-#### 4   :
 this way Can't write to `globle variate` 
 ```go
-<name> := <value>	// it == var <name> dataType ; <name> = <value>
+<name> := <value>	// it   ==   var <name> dataType ; <name> = <value>
 <name 1>, <name 2> := 100, "tom"
 ```

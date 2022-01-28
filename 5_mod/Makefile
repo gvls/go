@@ -1,6 +1,9 @@
-# =================
-# ===use method====
-# =================
+# _           _ _     _               
+#| |__  _   _(_) | __| |   __ _  ___  
+#| '_ \| | | | | |/ _` |  / _` |/ _ \ 
+#| |_) | |_| | | | (_| | | (_| | (_) |
+#|_.__/ \__,_|_|_|\__,_|  \__, |\___/ 
+#                         |___/       
 #
 # if not add parameter in end of make, execute first "name"
 # if add @ to front of command, terminal will not output command

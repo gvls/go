@@ -1,5 +1,6 @@
 ## 2 install
 ```go
+cd <directory>
 go install
 ```
 1. Build source code
