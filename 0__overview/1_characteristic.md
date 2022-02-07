@@ -1,11 +1,11 @@
-### 3  function
+###   function
 1. `编码规范标准统一`
 
-2. like: Go = c + python:
-* have safe and performance of static language
-Inherit many characteristic of c: have weak pointer
-brief program language : less code can implement `框架的标准化` 
-* have high develop maintain efficiency of dynamic language
+2. Go ~= c + python:
+* Have **safe** and **performance** of static language.
+Inherit many characteristic of **c**: have **weak pointer**
+**Brief** program language : less code can implement `框架的标准化` 
+* Have high develop maintain **efficiency** of dynamic language
 `容易学习上手` 
 
 3. one binary file : `可直接编译成机器码，不依赖其他库，glibc的版本有一定要求`
@@ -24,7 +24,7 @@ brief program language : less code can implement `框架的标准化`
 
 10. `不一定需要IDE，任何地方写，任何地方运行`
 
-11. high memory manage : `go内存占用更小，CPU消耗相对低`
+11. high **memory** manage : `go内存占用更小，CPU消耗相对低`
 
 12. `Golang 默认一种垃圾回收策略，走的是高频次低延迟的路线，而默认Java/C#是高吞吐量高延迟的，所以这点非常不利于Go的性能表现。`
 

@@ -1,5 +1,8 @@
-## 2 `bool`
+##  bool
 ```shell
+logic : true
+
+physics :
 ______
 |    |
 |true|
@@ -8,13 +11,14 @@ ______
 ```
 use one byte
 
-## 2 Value
-`true` 
-`false` 
+##  Value
+|---------|
+| value   |
+|---------|
+| `true`  |
+|---------|
+| `false` |
+|---------|
 
-## 2 use in where
-use in logic operation
-
-`if` 
-
-`for` 
+##  use in where
+use in logic operation. like : `if` , `for` 

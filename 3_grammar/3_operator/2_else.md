@@ -1,5 +1,8 @@
-### 3  `&` 
-get variate address
-
-### 3  `*` 
-get value of variate which pointer point to
+##  else
+|--------|---------------------------------------------|
+| format | description                                 |
+|--------|---------------------------------------------|
+| `&`    | get variate address                         |
+|--------|---------------------------------------------|
+| `*`    | get value of variate which pointer point to |
+|--------|---------------------------------------------|

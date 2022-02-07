@@ -1,0 +1,6 @@
+##  length
+```go
+len(<str>)
+```
+
+

@@ -1,4 +1,4 @@
-## 2 define initialize
+##  define initialize
 `dataType` : `bool` , `int...` , `float...` , `complex` , `string` 
 `value` can't include `variate` or `function` ...
 

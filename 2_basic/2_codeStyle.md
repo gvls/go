@@ -1,4 +1,4 @@
-## 2 style
+##  style
 * Retract
 
 * Make blank in all side of some things

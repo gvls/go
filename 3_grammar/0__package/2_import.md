@@ -1,4 +1,4 @@
-## 2 import `package`
+##  import package
 Write it after `package name` 
 If `package` is `内置标准库`, we needn't write `path` 
 If `package` is custom, we need write `绝对路径` from `GOPATN/src/` 

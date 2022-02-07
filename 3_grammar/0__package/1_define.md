@@ -1,4 +1,4 @@
-## 2 define `package  `
+##  define package  
 ```go
 package <name> 	// write in first line
 ```

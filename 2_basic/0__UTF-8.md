@@ -1,4 +1,10 @@
-## 2 `UTF-8` 
-alphabet : 1 byte
-number : 1 byte
-Chinese : 3 byte
+##  `UTF-8` 
+|----------|--------|
+| type     | size   |
+|----------|--------|
+| alphabet | 1 byte |
+|----------|--------|
+| number   | 1 byte |
+|----------|--------|
+| chinese  | 3 byte |
+|----------|--------|

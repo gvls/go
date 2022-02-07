@@ -1,4 +1,4 @@
-## 2 official website
+##  official website
 [official](golang.org) 
 [china](https://www.golangtc.com) 
 [mirror](https://golang.google.cn/dl/) 

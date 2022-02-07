@@ -1,41 +1,46 @@
-## 2 map
+##  map
 It is a `key-value` data structure
 It's `存储` is `无序` 
-Capacity of `map` is dynamic increase
+Capacity of `map` is dynamic increase (not replace old memory immediately. old memory be free by `gc`)
 Element of `map` can't be `取地址` 
 
+```shell
+type hmap struct{				// implement 散列表. use 拉链法 解决碰撞
+	count 	   int				// count of key-value
+	flags 	   uint8
+	B	  	   uint8
+	noverflow  uint16
+	hash0	   uint32			// hash seed
 
-### 3  `key` 
-can't repetition
-If `key` which want to add same as `key` already in `map` , new `key-value` will overwrite old `key-value`
+	buckets	   unsafe.Pointer	// point to [...]bucket.
+	oldbuckets unsafe.Pointer	
+	nevacuate  uintptr			//
 
-### 3  `data type` 
-* `keyType` 
-Can't is `slice` , `map` , `function` (they can use `==` to judge
-Usually, `keyType` is `int` or `string` 
-
-* `valueType` 
-Can is `map` , `struct`(often use) ...
-
-```go
-map[keyType]valueType	//读起来就是 map[key] 的值是 value
-```
-
-### 3  define
-```go
-var variateName map[keyType]valueType
-```
-
-### 3  evaluation
-```go
-variateName = map[keyType]valueType {
-	key : value,
-	...
-	key : value,
+	extra	   *mapextra		//
 }
 ```
-
-```go
-variateName = make(map[keyType]valueType [, size]) // if not write size, size == 1
+```shell
+buckets		 _____________________________
+			 |      |      |      |      |
+head node	 |bucket|bucket|bucket|bucket|
+			 |      |      |      |      |
+			 -----------------------------
+				|      |      |      |
+				v 	   v      v      v
+link table	 bucket  bucket bucket bucket
+				|      |      |      |
+				v      v      v      v
+		   	   ...    ...    ...    ...
 ```
 
+* loadFactor 加载因子
+loadFactor =  散列包含的元素数 / 位置总数
+If loadFactor more high, 冲突产生概率 more high
+When loadFactor 大于阈值, len(map)/2^B > 6.5, visit efficiency change to low and Go will expand cap for map 
+when expand cap, it point to old buckets. when next time we visit old value, copy value of oldbuckets to buckets and cancel quote for old value. memory of oldbuckets be free by gc
+
+* 哈希函数
+哈希值 = 哈希fuc(key)
+result is lowValue and highValue
+lowValue is local place of buckets
+hightValue is local key (node of bucket link table)

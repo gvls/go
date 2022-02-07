@@ -1,0 +1,6 @@
+##  visit all
+```go
+<variate>
+```
+
+

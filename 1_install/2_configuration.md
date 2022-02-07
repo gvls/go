@@ -1,12 +1,12 @@
-## 2 install
-### 3  Decompression
+##  install
+###   Decompression
 ```shell
-tar -zxvf xxxx.tar.gz
+tar -zxvf <xxxx>.tar.gz
 mv go/ /usr/local/go
 ```
 
-### 3  environment
-1. `profile` 
+###   environment
+1. profile 
 ```shell
 vim /etc/profile
 	export GOROOT=/usr/local/go
@@ -17,7 +17,7 @@ vim /etc/profile
 	export GOPROXY=https://goproxy.cn,direct
 	export GONOPROXY=git.tencent.com,git.code.tencent.com
 ```
-2. `go mod` 
+2. go mod 
 ```shell
 # get environment message
 #go env [-json] [property]
@@ -41,17 +41,15 @@ go env -w GOPROXY=https://goproxy.cn,direct
 #go env -u GOPROXY
 ```
 
-
-
-### 3  environment of `goland` 
-```shell
+###   environment of goland 
+```
 settings -> Go ->
 	GOROOT
 	GOPATH
 	GO Modules : GOPROXY=https://goproxy.io
 ```
 
-### 3  Test
+###   Test
 ```shell
 go version
 ```
