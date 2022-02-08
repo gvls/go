@@ -20,8 +20,8 @@ append(slice1, newSlice...)
 > capacity : cap1 + number of newElement
 
 ####    If cap1 - len1   `<`    count of newElement 
-If length of array <= 1024, append() will new 2xlen1 		array
-If length of array >  1024, append() will new 大于1.25xlen1 array
+If length of array <  1024, append() will new 2xlen1 		array
+If length of array >= 1024, append() will new 1.25xlen1 array
 
 1. Create **new** 匿名arrary 
 2. This new 匿名数组 copy all element from arrary1

@@ -11,6 +11,12 @@ mapName
 ```go
 mapName[key]
 ```
+If key not exist, it will return default value
+
+* get value and judge if exist
+```go
+v, ok := mapName[key]
+```
 
 * value is `map` 
 ```go
