@@ -16,7 +16,8 @@ func main(){
 ```
 
 ###   深拷贝
-copy **value** which pointer point to
+copy **value of array** which pointer point to
+length and capacity **isn't change**
 array of slice1 is **new** array
 ```go
 copy(slice1, slice2)	// slice1  <==value==  slice2

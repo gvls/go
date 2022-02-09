@@ -1,8 +1,8 @@
-## 2 `主线程` | `进程` 
+##  `主线程` | `进程` 
 Like `进程` , but `比进程轻量` 
 It is physics `线程` and is `重量级` 
 
-## 2 `协程` | `线程` 
+##  `协程` | `线程` 
 Like `线程` , but `比线程轻量` 
 `一个线程可以有多个协程` 
 It is start by `主线程`
@@ -14,7 +14,7 @@ It is logical `线程` and is `轻量级`
 
 
 
-### 3  create one `goroutine` 
+###   create one `goroutine` 
 If one `goroutine` is throw `panic`, total `procedure` will exit (can use `defer` and `recover` to handle)
 ```go
 go <function>

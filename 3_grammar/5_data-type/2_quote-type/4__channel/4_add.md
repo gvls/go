@@ -1,0 +1,5 @@
+##  add
+
+```go
+chanVariateName<- value
+```

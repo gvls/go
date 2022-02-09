@@ -14,19 +14,20 @@ append(slice1, newSlice...)
 
 ####    If cap1 - len1   `>=`   count of newElement 
 1. Add newElement to end of arrary1
-2. function return :
+2. function return : **new slice**
 > arrary   : **array1**
 > length   : len1 + number of newElement
 > capacity : cap1 + number of newElement
 
 ####    If cap1 - len1   `<`    count of newElement 
-If length of array <  1024, append() will new 2xlen1 		array
-If length of array >= 1024, append() will new 1.25xlen1 array
+~~ If length of array <  1024, append() will new 2xlen1 array ~~
+~~ If length of array >= 1024, append() will new 1.25xlen1 array ~~
+length of new array = length of old array + length of new element
 
 1. Create **new** 匿名arrary 
 2. This new 匿名数组 copy all element from arrary1
 3. Add newElement to end of this new 匿名数组
-4. function return :
+4. function return : **new slice**
 > arrary   : this **new** 匿名数组
 > length   : len1 + number of newElement
 > capacity : cap1 + number of newElement

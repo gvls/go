@@ -20,17 +20,22 @@ slice	|pointer|   2   |   4   |
 		  xxxxx
 ```
 
-###   point to **exist** array 
+###   point to **exist** array or slice
 slice point to 已经存在的数组 and initialize slice by length and capacity
 切一个数组得到一个切片 
 切片可以继续被切片 
-```go
-arraryName[indexi:indexj]	// [indexi,indexj) cap default is cap(arrayName)
-```
 if not write indexi, default value is 0
 if not write indexj, default value is len(array)
+length = indexj - indexi
+new array == old array
+
+* default cap
 ```go
-arraryName[indexi:indexj:cap]	// [indexi,indexj)
+arraryOrSlice[indexi:indexj]	// [indexi,indexj) cap default is cap(arrayOrSlice)-indexi
+```
+* point cap
+```go
+arraryOrSlice[indexi:indexj:cap]	// [indexi,indexj)
 ```
 
 ###   point to **create** array 

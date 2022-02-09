@@ -1,4 +1,4 @@
-## 2 `CPU` number
+##  CPU number
 Need `import "runtime` 
 
 * get number of `CPU` 
