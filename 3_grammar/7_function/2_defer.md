@@ -16,3 +16,7 @@ If `function` define `variate` for `return list` , `defer` may change value of i
 4. execute `statement` of `return` and **evaluation** value of `statement` to temporary `variate` or `variate` of `return list` 
 5. **execute** `statement` of `defer` of independent `栈` by `后进先出` 
 6. **return** `return value` and finish `function` 
+
+
+###   performance
+slow

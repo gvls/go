@@ -2,7 +2,7 @@
 design `gorutime` must attention what time to **close** `channel` 
 When close `channel` , we can read but **can't write**
 ```go
-close(chaVariateName)
+close(chaVariateName)	// only do once. if not may panic
 ```
 When add element, if haven't free space to add, operator of add will **阻塞wait**    and if **never** have free space, procedure may appear **deadlock** 
 
@@ -23,7 +23,7 @@ wrte new element to channel
 * If haven't free space and may **have** goroutine do **read** for this channel
 current goroutine will **阻塞wait** 
 
-* If haven't free space and **never have** goroutine do **read** for this channel
+* If **haven't free** space and **never have** goroutine do **read** for this channel
 procedure will **deadlock** 
 
 ####    read
@@ -33,13 +33,13 @@ get and remove element from channel
 * If haven't element in channel and may **have** goroutine do **write** for this channel
 current goroutine will **阻塞wait** 
 
-* If haven't element in channel and **never have** goroutine do **write** for this channel
+* If **haven't element** and **never have** goroutine do **write** for this channel
 procedure will **deadlock** 
 
 
 ###   channel is close
 ####    write
-**Can't** add any
+**Can't** add any and **panic** 
 
 ####    read
 * If have    element in channel

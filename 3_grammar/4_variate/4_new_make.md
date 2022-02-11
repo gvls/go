@@ -1,5 +1,6 @@
 ##  new and make
 In **runtime** of procedure, new space of variate in **heap**
+apply more size will make performance more slow
 
 ###   new
 It be use for 值类型

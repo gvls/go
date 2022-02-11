@@ -8,20 +8,24 @@ special two level
 kernel space	  ^
 ------------------|----------------------------
 user space		  |
-				  /\
-				 /M \
-				/____\
+				  /\	/---\
+				 /M \ --| G	| -- running
+				/____\	\---/
 				  |
 				|----|	/---\
 				| P  |--| G	| \
 				|____|	\---/  \
-				  |		  |
-				/---\	/---\
-	running	--	| G	|	| G	| -- not running(runqueue)
-				\---/	\---/
+				   		  |
+				     	/---\
+	                	| G	| -- not running(runqueue)
+				     	\---/
 						  |
 						/---\  /
 						| G	| /
+						\---/
+
+						/---\
+						| G	| -- waiting
 						\---/
 ```
 
