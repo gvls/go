@@ -1,4 +1,6 @@
 ##  close
+If value of channel is nil, close will **panic** 
+If channel is close, close will **panic** 
 design `gorutime` must attention what time to **close** `channel` 
 When close `channel` , we can read but **can't write**
 ```go
@@ -46,5 +48,5 @@ procedure will **deadlock**
 get and remove element from channel
 
 * If haven't element in channel
-**return** false and do next code
+**return** default value and false and do next code
 

@@ -14,7 +14,7 @@ int   float   bool   string   array   struct
 Use **two block** memory.
 Memory store **address** of actual value.
 Often be create in `heap`, when if don't quote any actual value, `GC` will recycle this garbage.
-When define `variate` , we must visit element of it   before evaluation for `variate` .
+When define `variate` , we must visit element of it   before **evaluation** for `variate` .
 `变量和变量之间 can't 用==直接判断` .
 ```go
 pointer   slice   map   interface   管道channel

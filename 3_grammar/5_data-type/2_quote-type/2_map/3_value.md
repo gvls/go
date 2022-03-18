@@ -24,6 +24,6 @@ add `&` to front of pre way
 
 ###   in running to new array 
 ```go
-make(map[keyType]valueType [, size]) // if not write size, size == 1
+make(map[keyType]valueType [, size]) // if not write size, size == ~~ 1 ~~
 ```
 

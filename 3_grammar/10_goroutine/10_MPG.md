@@ -33,13 +33,23 @@ user space		  |
 ###   M Machine 
 one machine 关联了 one **kernel thread**
 操作系统的主线程，物理线程 
+bind one P
 
 
 ###   P Processor 
-count of it be set by GOMAXPROCS or runtime.GOMAXPROCS()
+count of it be set by **GOMAXPROCS** or runtime.GOMAXPROCS()
 协程执行需要的上下文 
 handler which handle user code
 Processor == count of thread
+Max count is 256
+be save in global array
+relation one runqueue
+if P is free , Go will bind one M to it and runqueue will init
+
+* search G
+1. search runqueue which P bind
+2. search runqueue which other P bind
+3. search global runqueue 
 
 * 全局 runqueue
 When P finish all goroutine of itself, P can get goroutine from 全局 runqueue
@@ -49,6 +59,7 @@ When one P finish all goroutine of itself, it can get global goroutine or gorout
 
 
 ###   G goroutine 
+count of it be set by **GOMAXPROCS** or runtime.GOMAXPROCS()
 light weight thread
 
 

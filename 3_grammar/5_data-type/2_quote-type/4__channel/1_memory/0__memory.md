@@ -6,11 +6,12 @@
 ```shell
 type hchan struct {
 	buf			unsafe.Pointer	// buffer cache data.
-	qcount 						// count of circulation
+	qcount 						// count of element
 	dataqsiz					// length of circulation
-	elemsize					// enable max size of element
 	closed						// flag : channel if closed
+
 	elemtype					// type of element
+	elemsize					// enable max size of element
 
 	sendx						// write index(write pointer) of buf (channel <- data)
 	f 

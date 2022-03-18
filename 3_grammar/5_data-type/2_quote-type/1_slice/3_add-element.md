@@ -1,6 +1,7 @@
 ##  add element
 ###   append 
-basic on **make** 
+basic on **make** : if variate not evaluation, it auto evaluation
+If have 扩容, is slow : so when define slice, we best to avoid 扩容
 
 * add value
 ```go
@@ -20,7 +21,7 @@ append(slice1, newSlice...)
 > capacity : cap1 + number of newElement
 
 ####    If cap1 - len1   `<`    count of newElement 
-~~ If length of array <  1024, append() will new 2xlen1 array ~~
+~~ If length of array <  1024, append() will new 2xlen1 array ~~ (1.17 is )
 ~~ If length of array >= 1024, append() will new 1.25xlen1 array ~~
 length of new array = length of old array + length of new element
 

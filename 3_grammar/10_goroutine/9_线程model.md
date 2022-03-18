@@ -1,5 +1,5 @@
 ##  thread model
-###   use level thread model
+###   user level thread model
 ```shell
 kernel space			KSE(线程)			KSE
 						 ^

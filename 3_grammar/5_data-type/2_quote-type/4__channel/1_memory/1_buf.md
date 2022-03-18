@@ -39,7 +39,7 @@ sendx---write-->\ 0	| 0	| 0 /
 3. do unlock
 
 
-###   不完全的 not lock queue
+###   不完整的 not lock queue
 * If have buf
 It is like **async异步**
 If not full and not empty may use buf

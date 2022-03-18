@@ -21,6 +21,7 @@ wg.Add(<number>)
 wg.Done()
 ```
 
+example :
 ```go
 func xxx(..., done func()){
 	defer done()

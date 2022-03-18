@@ -1,14 +1,15 @@
 ##  process by buf
 ###   send
 1. do send
-2. If exist waiter, send data to waiter direct 
-3. If buf have free space, send data to buf 
-4. or else : waiting what other goroutine do recv 
+2. If channel is **close** , return result 
+3. If exist **waiter**, send data to waiter direct (buf is empty)
+4. If buf have free space, send data to buf 
+5. or else : waiting what other goroutine do recv 
 
 * send direct
-1. copy data to waiter
+1. copy data to first waiter
 2. make waiter is preparing (move to runqueue)
-3. preparing wait be execute
+3. waiter preparing **wait** be execute
 
 * send to buf
 1. do send
@@ -20,15 +21,31 @@
 2. create sudog 
 3. add sudog to sendx 
 4. set sender is waiting (wait for sudog is active)
+5. if use **select** sender not waiting 
 
 
 ###   recv
 1. do recv
-2. If channel is close, return result 
-3. If exist waiter, recv data from waiter direct 
+2. If channel is **close** and buf is empty, return result
+3. If exist **waiter**, recv data from waiter direct 
 4. If buf have data, recv data from buf 
 5. or else : waiting what other goroutine do send 
 
+* recv direct
+1. If not have buf, copy from first waiter
+2. If have buf,		copy data from buf and copy data of first waiter to buf
+3. set waiter is preparing
+
+* recv from buf
+1. calculate index of first element of buf
+2. get data from buf and update sendx and qcount 
+
+* waiting to recv
+1. get goroutine and data of recver
+2. create sudog 
+3. add sudog to recvq 
+4. set recver is waiting (wait for sudog is active)
+5. if use **select** recver not waiting 
 
 ###   send阻塞
 in total process, M(system thread) isn't **waiting** (use a little resource switch goroutine)

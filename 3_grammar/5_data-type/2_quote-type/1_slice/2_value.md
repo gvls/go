@@ -26,6 +26,7 @@ slice point to 已经存在的数组 and initialize slice by length and capacity
 切片可以继续被切片 
 if not write indexi, default value is 0
 if not write indexj, default value is len(array)
+indexj can't  >  length of array or cap of slice
 length = indexj - indexi
 new array == old array
 

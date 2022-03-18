@@ -1,6 +1,6 @@
 ##  sync and 互斥
 
-###   sync
+###   sync同步
 They are execute **by order**
 
 
