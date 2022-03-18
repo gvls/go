@@ -36,30 +36,46 @@ one machine 关联了 one **kernel thread**
 bind one P
 
 
-###   P Processor 
+###   P Processor (context)
 count of it be set by **GOMAXPROCS** or runtime.GOMAXPROCS()
-协程执行需要的上下文 
+defautl value of GOMAXPROCS is count of cpu
 handler which handle user code
-Processor == count of thread
 Max count is 256
+goroutine need P when execute
+Processor == count of thread
 be save in global array
-relation one runqueue
-if P is free , Go will bind one M to it and runqueue will init
+count of P decide coutn of M
 
-* search G
-1. search runqueue which P bind
-2. search runqueue which other P bind
-3. search global runqueue 
+* if have one free P
+1. Go will **create one new M**
+2. **bind one M** to it 
+3. init one local runqueue to P
 
-* 全局 runqueue
+
+
+###   G goroutine 
+**协程** not is 并发 but G support 并发
+It is **user thread**, switch G under control of user
+count of it be set by **GOMAXPROCS** or runtime.GOMAXPROCS()
+light weight thread
+When create one G , G will be add to local runqueue or global runqueue
+**main** also is one G
+
+* search G fromt runqueue
+local -> other local -> blobal
+
+* local runqueue
+belong to specific P
+
+* global runqueue
 When P finish all goroutine of itself, P can get goroutine from 全局 runqueue
 
 * 均衡分配goroutine
 When one P finish all goroutine of itself, it can get global goroutine or goroutine of other P
+transmit count of local to local  : half
+transmit count of local to global : count of global  /  count of P
 
-
-###   G goroutine 
-count of it be set by **GOMAXPROCS** or runtime.GOMAXPROCS()
-light weight thread
-
-
+####    switch G
+When run procedure, Go will create **sysmon** to monitoring and manage
+When G be execute once, sysmon will record the count
+If one G be execute too long, sysmon will add tab to mark it
