@@ -2,10 +2,10 @@
 ###   Small   ->   big
 
 ###   Big   ->   small
-* build out put error
+* `build` out put error
 By current `statement`, can know value is bigger than value scope of `data type` of `variate`.
 
-* Build not out put error
+* `build` not out put error
 By current `statement`, can't know value is bigger than value scope of `data type` of `variate`.
 May have **precision lost** and value is value of **overflow**
 Such as: 
