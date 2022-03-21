@@ -11,6 +11,8 @@ It is logical `线程` and is `轻量级`
 `主线程退出时所有协程也会退出` 
 `Go` can easy to open `上万` `goroutine` 
 goroutine : user space light weight thread
+use less memory than thread
+have high performance on call
 
 协程（coroutine）：又称微线程与子例程（或者称为函数）一样，协程（coroutine）也是一种程序组件。相对子例程而言，协程更为一般和灵活，但在实践中使用没有子例程那样广泛。
 

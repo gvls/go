@@ -1,5 +1,6 @@
 ##  thread model
 ###   user level thread model
+Can't use use more core CPU by effective
 ```shell
 kernel space			KSE(线程)			KSE
 						 ^
@@ -17,6 +18,7 @@ M : 1			|		|线程2|		|	|
 
 
 ###   kernel level thread model
+Use more resource on what switch context
 ```shell
 kernel space		 KSE KSE    KSE			KSE
 					  ^	  ^		 ^
@@ -34,6 +36,7 @@ user space		______|___|______|___	_______
 
 
 ###   two level thread model
+have more difficulty on what implement caller
 ```shell
 kernel space		 KSE 	    KSE			KSE
 					  ^	  		 ^
@@ -52,4 +55,4 @@ M : N			|	  |	|线程2|	 |	|	|
 
 
 ###   MPG
-special two level
+special two level thread model

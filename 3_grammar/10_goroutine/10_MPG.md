@@ -59,7 +59,7 @@ It is **user thread**, switch G under control of user
 count of it be set by **GOMAXPROCS** or runtime.GOMAXPROCS()
 light weight thread
 When create one G , G will be add to local runqueue or global runqueue
-**main** also is one G
+**main()** also is one G
 
 * search G fromt runqueue
 local -> other local -> blobal
