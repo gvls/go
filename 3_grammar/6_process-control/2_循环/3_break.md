@@ -1,6 +1,13 @@
-## 2 `break` 
-`break` 
-jump out of current `for` or current `switch` 
+##  break 
 
-`break <name>` 
+* jump out current
+jump out of current `for` or current `switch` 
+```go
+break
+```
+
+* jump out specific
 jump out of `for` which be mark `<name>:` 
+```go
+break <name> 
+```
