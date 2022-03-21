@@ -1,5 +1,5 @@
 ##  compiler and run
-It generate a **binary** file which add dependences library of runtime in current directory
+It generate a **binary** file which add dependences library of runtime in current directory in current directory
 We can copy it to other machine to run and don't need install environment of `go develop`
 
 ###   process
