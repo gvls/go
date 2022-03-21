@@ -1,3 +1,2 @@
-## 2 `return` 
-`return` 
-jump out of `function` or `method` 
+##  return 
+exit current  function or method 

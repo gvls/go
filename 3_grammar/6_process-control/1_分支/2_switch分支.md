@@ -1,17 +1,19 @@
-## 2 `swirch` 
+##  swirch
 divide one road to two or more road
 procedure **only execute one** road of these road
 like `if-else-if-else` 
 From top to bottom, search which `expresstion` == `expresstion 0` 
 
 * `expresstion` 
-it is `constant` , `variate` , `function` which have return ...
+it is constant , variate , function which have return ...
 Type of all `expresstion` must same
 in `constant` , `expresstion` can't same
 
 * `fallthrough` 
 
-* according to value
+
+
+###   according to value
 ```go
 switch <expresstion 0> {
 	case <expresstion 1>, <expresstion 2> [, ...] :
@@ -23,8 +25,10 @@ switch <expresstion 0> {
 }
 ```
 
-* according to `bool` 
-If not write `expression 0`   or define `variate` by write `;` to end(not recommend), can use `condition` to replace `expresstion`  and use `switch` as `if-else-if-else` 
+
+
+###   according to condition
+If not write `expression 0`   or define `variate` by write `;` to end(not recommend), can use `condition` to replace `expresstion`
 ```go
 switch {
 	case <condition 1>[, ...] :
@@ -36,8 +40,10 @@ switch {
 }
 ```
 
-* `Type switch` 
-judge actual type of `variate` of `interface` 
+
+
+###   Type switch
+judge actual type of interface variate
 ```go
 switch 	interfaceVaraite.(type) {
 	case <type 1> [, ...] :
