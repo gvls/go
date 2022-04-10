@@ -8,7 +8,7 @@ var <name> <type> = <value>
 
 ###   declaration not have type + 初始化
 If not write `data type`, go will automatic conclude `data type` by value
-It often be use in `globle` 
+It often be use in `globle` (In globle, begin of statement must is identifier)
 ```go
 var <name> = <value>
 var <name1>, <name2> = 100, "tom"
