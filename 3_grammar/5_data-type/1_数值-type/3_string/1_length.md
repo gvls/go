@@ -1,6 +1,0 @@
-##  length
-```go
-len(<str>)
-```
-
-

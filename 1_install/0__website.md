@@ -1,8 +1,0 @@
-##  official website
-[official](golang.org) 
-[china](https://www.golangtc.com) 
-[mirror](https://golang.google.cn/dl/) 
-[tour](https://tour.golang.org/) 
-[tour china](https://tour.go-zh.org/) 
-[application program interface](https://golang.org/pkg) 
-[api china](https://studygolang.com/pkgdoc) 

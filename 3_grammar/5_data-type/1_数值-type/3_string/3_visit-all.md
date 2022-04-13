@@ -1,6 +1,0 @@
-##  visit all
-```go
-<variate>
-```
-
-
