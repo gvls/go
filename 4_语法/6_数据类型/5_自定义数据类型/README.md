@@ -1,5 +1,16 @@
 ##  README
-				// if structName 大写首字母 : other package can visit
-	字段名 数据类型				// 如果字段名 大写首字母 : other package can visit 
-	字段名 数据类型				// if name 大写首字母 : field can be 序列化
-	字段名, 字段名 数据类型		// define more field in one line
+定义一种**全新**的数据类型，新数据类型 ！= 旧数据类型
+在全局里 定义
+如果新数据类型的名字 首字母大写，该新数据类型 可以被其他包访问
+
+```go
+type 新数据类型 某数据类型
+```
+
+###   例子
+```go
+type myInt int
+var a myInt
+var b int
+a = b 			// 抛出异常
+```

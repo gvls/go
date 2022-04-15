@@ -11,25 +11,10 @@ bucket 的底层结构 bmap 中含有一个指向溢出桶的指针(uintptr类�
 
 只有当 map 的 key 和 elem 都不含指针时这两个字段才有效, 因为这两个字段设置的目的就是避免当 map 被 gc 跳过扫描带来的引用内存被 free 的问题, 当 map 的 key 和 elem 含有指针时, gc 会扫描 map, 从而也会获知 bmap 中指针指向的内存是被引用的, 因此不会释放对应的内存
 
-* mapextra
-When all key and elem not include pointer and length not pass 128, this struct will be use
 ```shell
 tyep mapextra struct {
 	overflow     *[]*bmap
 	oldoverflow  *[]*bmap
 	nextOverflow *bmap
 }
-```
-
-
-```shell
-extra 	___________________________________
-		|		 | 			 | 			  |
-		|overflow|oldoverflow|nextoverflow|
-		|		 |			 |			  |
-		-----------------------------------
-
-overflow     : slice. save address of all obucket
-oldoverflow  : slice.
-nextoverflow : point to free obucket
 ```

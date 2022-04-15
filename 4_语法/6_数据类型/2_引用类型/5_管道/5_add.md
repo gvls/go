@@ -1,5 +1,0 @@
-##  add
-
-```go
-chanVariateName<- value
-```
