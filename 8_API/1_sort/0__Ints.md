@@ -1,6 +1,4 @@
-## 2 `Ints` 
-* sort `int` of `slice` 
+##  Ints 
 ```go
-sort.Ints(<[]int>)
+sort.Ints([]int)
 ```
-
