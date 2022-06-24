@@ -10,3 +10,4 @@
 ###   命名规则
 使用驼峰命名法。
 特殊单词使用原有写法，如`ID API URL url` 。
+`bool` 类型使用`has is can allow` 开头。
